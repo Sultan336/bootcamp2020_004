@@ -2,14 +2,18 @@ import React, {
   useState
 } from 'react';
 import './App.css';
+import {
+  Message
+} from './message.js';
 export default function App() {
   let [count, setCount] = useState(1);
   return ( <
     div >
     <
-    h3 > value of counter variable is: {
+    Message counter = {
       count
-    } < /h3> <
+    }
+    /> <
     br / >
     <
     button onClick = {
