@@ -13,7 +13,7 @@ export default function App() {
     br / >
     <
     button onClick = {
-      () => setCount(2)
+      () => setCount(count + 1)
     } > Update counter < /button> < /
     div >
   );
