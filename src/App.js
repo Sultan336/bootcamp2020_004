@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {
+  useState
+} from 'react';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+export default function App() {
+  let [count, setCount] = useState(1);
+  return ( <
+    div >
+    <
+    h3 > value of counter variable is: {
+      count
+    } < /h3> <
+    br / >
+    <
+    button onClick = {
+      () => setCount(2)
+    } > Update counter < /button> < /
+    div >
   );
 }
-
-export default App;
